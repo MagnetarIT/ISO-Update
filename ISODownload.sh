@@ -7,9 +7,9 @@ NC='\033[0m' # No Color
 # Check ISO folder is present for the current user, create it if its not
 DIRECTORY=~/"Documents/ISO"
 if [ -d "$DIRECTORY" ]; then
-    echo -e "${GREEN}$DIRECTORY is already present"
+    echo -e "${GREEN}$DIRECTORY is already present ${NC}"
 else
-    echo -e "${GREEN}Creating folder $DIRECTORY"
+    echo -e "${GREEN}Creating folder $DIRECTORY ${NC}"
     mkdir $DIRECTORY
 fi
 
